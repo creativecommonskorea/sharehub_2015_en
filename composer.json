@@ -1,0 +1,50 @@
+{
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/wordpress",
+        "type": "webroot",
+        "version": "4.2.2",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/WordPress/WordPress/archive/4.2.2.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
+    },
+    {
+      "type":"composer",
+      "url":"http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "fancyguy/webroot-installer": "1.1.0",
+    "composer/installers": "~1.0.12",
+    "wordpress/wordpress": "4.2.2",
+    "vlucas/phpdotenv": "^2.0.1",
+    "wpackagist-plugin/akismet": "3.1.2",
+    "wpackagist-plugin/auto-post-thumbnail": "3.3.3",
+    "symfony/yaml": "^2.7"
+  },
+  "extra": {
+    "webroot-dir": "docroot/wordpress",
+    "webroot-package": "wordpress/wordpress",
+    "installer-paths": {
+      "docroot/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "docroot/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "docroot/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "rm -rf docroot/wordpress/wp-content"
+    ],
+    "post-update-cmd": [
+      "rm -rf docroot/wordpress/wp-content"
+    ]
+  }
+}

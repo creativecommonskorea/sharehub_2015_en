@@ -1,0 +1,492 @@
+	
+	body { padding:0; margin:0; background:#666; font-family: 'Nanum Gothic', Helvetica, sans-serif, 'Apple Gothic', 'Malgun Gothic', Dotum; font-size: 12px; color:#fff; }
+	
+	body.single,
+    body.page,
+    body.category { background:#fff; }
+	
+	.clear { clear:both; }
+	.content_width { position:relative; width:1112px; height:100%; margin:0 auto; }
+	
+	#header { background:url(./images/bg_nav.png) repeat; height:50px; position:fixed; left:0; top:0; right:0; z-index:1000; }
+		#header #logo { margin-left:30px; display:inline-block; width:82px; height:50px; text-indent:-10000px; overflow:hidden; background:url(./images/logo3.png) no-repeat; }
+		#header #nav { position:absolute; height:50px; top:0px; right:0; transition: width .2s; }
+		
+		body.admin-bar #header { top:32px; }
+		
+			#header #nav ul { margin:0; padding:0; list-style:none; }
+			#header #nav ul li { float:left;width:auto; height:50px; text-align:center; transition: background .5s; }
+			#header #nav ul li.selected,
+			#header #nav ul li.fixed_selected,
+			#header #nav ul li:hover { background:url(./images/bg_nav_selected.png) repeat; }
+			#header #nav ul li.kor { width:80px; }		
+			
+			#header #nav ul li a { display:block; padding-left:20px; padding-right:20px;  height:50px; line-height:50px; color:#fff; text-decoration:none; }
+
+			#header #nav ul li#nav_introduce { display:none; }
+			#header #nav ul li#nav_menu { display:none; padding-left:0; padding-right:0;  text-indent:-1000px; overflow:hidden; }
+			     #header #nav ul li#nav_menu a { width:50px; background:url(./images/hamburger.png) no-repeat center top; }
+		
+		#header.fixed { background:#B2A58B; }
+		#header.fixed #nav { z-index:1; transition: margin-top .1s; }
+			#header.fixed #nav ul li { background:#B2A58B; }
+			#header.fixed #nav ul li:last-child { border-right:0; }
+			
+            #header.fixed #nav ul li.selected,
+            #header.fixed #nav ul li.fixed_selected,
+			#header.fixed #nav ul li:hover { background:#00C1C0; }
+	       
+	    #header #nav_popup { display:none; position:fixed; top:60px; right:10px; width:200px; height:163px; background:#fff; box-shadow:0px 1px 3px rgba(0,0,0,0.4); }
+	       	body.admin-bar #header #nav_popup { top:92px; }
+	       	
+	       	#header #nav_popup ul { list-style:none; margin:0; padding:0; }
+	       	#header #nav_popup ul li { border-bottom:1px solid #ddd; box-sizing:border-box; }
+	       	#header #nav_popup ul li:last-child { border-bottom:0; }
+	       	
+            #header #nav_popup ul li a { display:block; line-height:30px; height:30px; color:#333; text-decoration:none; padding:5px 10px; }
+            #header #nav_popup ul li a:hover { background:#ddd; }
+	       	
+	       	#header #nav_popup ul li.selected a { background:#00C1C0; color:#fff; }
+	       	
+	       	
+	/* INDEX */
+	/* ***** */
+	
+	#information { position:relative; overflow:hidden; background:url(./images/image1.jpg) no-repeat center top; background-size:cover; }
+	
+		#information #button_tabs { width:934px; height:80px; position:absolute; left:50%; margin-left:-467px; bottom:250px; }
+			#information #button_tabs ul { margin:0; padding:0; list-style:none; }
+				#information #button_tabs ul li { float:left;  width:310px; height:80px; margin-right:2px; display: table; background:url(./images/bg_button_tab.png) repeat;  transition: background .2s; }
+				#information #button_tabs ul li:hover { background:url(./images/bg_button_tab_selected.png) repeat; }
+				
+				#information #button_tabs ul li:last-child { margin-right:0; }
+				
+				#information #button_tabs ul li a { display: table-cell; text-decoration:none; vertical-align: middle;  padding:15px; padding-left:75px; color:#000; font-size:13px; }
+				#information #button_tabs ul li a:hover {} 
+				
+				#information #button_tabs ul li.button_tab_1 a { background:url(./images/icon_button_1.png) no-repeat 15px center; }
+				#information #button_tabs ul li.button_tab_2 a { background:url(./images/icon_button_2.png) no-repeat 15px center; }
+				#information #button_tabs ul li.button_tab_3 a { background:url(./images/icon_button_3.png) no-repeat 15px center; }
+		
+		#information .main_title { font-size:52px; font-weight:bold; color:#fff; text-align:center; margin-top:0; margin-bottom:22px; }
+		#information .sub_title { font-size:18px; color:#fff; text-align:center; line-height:25px; }
+		
+		#information #news_area { padding:20px; height:160px; position:absolute; left:0; bottom:0; right:0; background:url(./images/bg_news_area.png) repeat; }
+			
+			#information #news_area .paging {}
+			#information #news_area .page_nav { position:absolute; right:0; top:-6px; letter-spacing:0; font-size:0; }
+				#information #news_area .page_nav a.arrow { display:inline-block; vertical-align:middle; border-bottom:1px solid #00c1c0; width:15px; height:25px; text-indent:-1000px; overflow:hidden; background:url(./images/icon_arrow.png) no-repeat; margin-right:14px; }
+					
+					#information #news_area .page_nav a.arrow_left { background-position:-30px 0px; }
+					#information #news_area .page_nav a.arrow_left:hover { background-position:-45px 0px; }
+					
+					#information #news_area .page_nav a.arrow_right { background-position:-0px 0px; }
+					#information #news_area .page_nav a.arrow_right:hover { background-position:-15px 0px; }
+			
+				#information #news_area .page_nav a.more { display:inline-block; font-size:12px; font-weight:bold; vertical-align:middle; border-bottom:1px solid #00c1c0; padding-left:5px; padding-right:5px; height:25px; line-height:25px; color:#00c1c0; text-decoration:none; }
+					#information #news_area .page_nav a.more:hover { color:#fff; background:#00c1c0; }
+
+			#information #news_area h2 { color:#00c1c0; font-size:18px; line-height:18px; font-weight:normal; padding:0; margin:0; margin-bottom:26px; }			
+			#information #news_area .news_wrap { float:left; }
+
+			#information #news_area .news_data { float:left; margin-right:64px; }
+			#information #news_area .news_data_right { margin-right:0; }
+			
+				#information #news_area .news_data .thumbnail { float:left; width:100px; height:100px; margin-right:24px; background:#27282a; background-size:cover; background-position:center; overflow:hidden; }
+				#information #news_area .news_data .information { float:left; width:398px; margin-top:0px; }
+					#information #news_area .news_data .information h3 { font-weight:bold; font-size:18px; line-height:18px; margin:0; padding:0; margin-bottom:8px; }
+						#information #news_area .news_data .information h3 a { color:#fff; text-decoration:none; }
+						#information #news_area .news_data .information h3 a:hover { text-decoration:underline; }
+						
+					#information #news_area .news_data .information span.extra { display:inline-block; font-size:13px; line-height:13px; margin-bottom:18px; }
+					#information #news_area .news_data .information p { font-size:15px; line-height:20px; margin:0; padding:0; }
+		
+	#about_share_hub { background:#fff; position:relative; overflow:hidden; min-height:600px; }
+		#about_share_hub h2 { font-weight:normal; margin:0; padding:0; height:50px; border-bottom:1px solid #00C1C0; margin-bottom:20px; font-size:20px; line-height:50px; text-indent:30px; }
+		#about_share_hub h3 { font-weight:bold; margin:0; padding:0; margin-bottom:10px; font-size:18px; text-indent:30px; color:#00c1c0; }
+		
+		#about_share_hub ul#share_hub_timeline { list-style:none; margin:0; padding:0; overflow:hidden; }
+			#about_share_hub ul#share_hub_timeline li { font-size:15px; line-height:18px; color:#00c1c0; float:left; width:210px; height:190px; padding:30px; background:url(./images/bg_timeline.png) no-repeat; }
+			#about_share_hub ul#share_hub_timeline li.today { width:40px;  background:url(./images/bg_timeline_today.png) no-repeat; }
+			
+			#about_share_hub ul#share_hub_timeline li:hover { color:#fff; }
+			
+			#about_share_hub ul#share_hub_timeline li .title { font-size:15px; margin-bottom:20px; }
+			
+		#about_share_hub  { }
+			#about_share_hub .about_article { position:relative; width:50%; height:100%; float:left; box-sizing:border-box;}
+			#about_share_hub .about_article_right { }
+				
+				#about_share_hub .about_article .about_article_content { padding-left:30px; padding-right:30px; } 
+				#about_share_hub .about_article .about_article_content h4 { margin:0; padding:0; font-weight:normal; font-size:60px; line-height:62px; margin-top:45px; margin-bottom:45px; padding-bottom:45px; color:#00c1c0; border-bottom:1px solid #00c1c0;  }
+				#about_share_hub .about_article .about_article_content p { text-align:justify; margin:0; padding:0; font-size:15px; line-height:25px; color:#00c1c0;  }
+				    #about_share_hub .about_article .about_article_content p a { color:#00c1c0; }
+				
+				
+	#sharing_city_seoul { position:relative; min-height:762px; background:url(./images/image_shareseoul.jpg) no-repeat center 0; background-size:cover; }
+		#sharing_city_seoul h2 { font-weight:normal; margin:0; padding:0; height:50px; border-bottom:1px solid #00C1C0; font-size:20px; line-height:50px; text-indent:30px; }
+		
+		#sharing_city_seoul ul#sharing_tabs { list-style:none; height:210px; margin:0; padding:0; border-bottom:1px solid #8b8ca1; }
+			#sharing_city_seoul ul#sharing_tabs li { float:left; width:25%; height:210px; text-align:center; background:url(./images/bg_sharing_content.png) repeat; }
+			#sharing_city_seoul ul#sharing_tabs li.selected a,
+			#sharing_city_seoul ul#sharing_tabs li a:hover { background:url(./images/bg_sharing_tab_selected.png) repeat; }
+			#sharing_city_seoul ul#sharing_tabs li.selected a span.title { background:url(./images/bg_icon_sharing.png) no-repeat center 10px; }
+			
+			#sharing_city_seoul ul#sharing_tabs li a { display:block; width:100%; height:100%; color:#fff; text-decoration:none; }
+			#sharing_city_seoul ul#sharing_tabs li span.title { display:block; color:#fff; margin:0; padding:0; font-size:30px; font-weight:bold; padding-top:60px; }
+			#sharing_city_seoul ul#sharing_tabs li span.description { display:block; color:#fff; margin:0; padding:0; font-size:16px; margin-top:14px; line-height:20px; }
+		
+		#sharing_city_seoul #sharing_content { position:absolute; left:0; top:210px; bottom:0; right:0; background:url(./images/bg_sharing_content.png) repeat; }
+			#sharing_city_seoul #sharing_content .description { display:none; font-size:20px; line-height:25px; padding-top:70px; }
+			#sharing_city_seoul #sharing_content .viewed { display:block; }
+			
+			#sharing_city_seoul #sharing_content .bt_download_report { position:absolute; left:0; bottom:70px; }
+			#sharing_city_seoul #sharing_content .bt_summary_download_report { left:280px; }
+			
+				#sharing_city_seoul #sharing_content .bt_download_report a { display:inline-block; vertical-align:middle;  height:40px; text-align:center; line-height:40px; color:#fff; background:url(./images/bg_download_report.png) repeat;  }
+				#sharing_city_seoul #sharing_content .bt_download_report a:hover { background:url(./images/bg_download_report_selected.png) repeat; }
+				
+				#sharing_city_seoul #sharing_content .bt_download_report a.text { text-decoration:none; font-size:14px; width:220px; }
+				#sharing_city_seoul #sharing_content .bt_summary_download_report a.text { width:350px; }
+				#sharing_city_seoul #sharing_content .bt_download_report a.text span { display:inline-block; padding-left:18px; background:url(./images/icon_sharing1.png) no-repeat left center; }
+				#sharing_city_seoul #sharing_content .bt_download_report a.text span.short { display:none; }
+				
+				#sharing_city_seoul #sharing_content .bt_download_report a.icon { text-decoration:none; width:40px; }
+				#sharing_city_seoul #sharing_content .bt_download_report a.icon span { display:inline-block; width:40px; height:40px; background:url(./images/icon_sharing2.png) no-repeat center center; text-indent:-1000px; overflow:hidden; }
+		
+		#sharing_city_seoul .share_seoul_logo { margin-left:80px; margin-bottom:40px; width:365px; height:233px; float:right; background:url(./images/logo_shareseoul.png) no-repeat; }
+		#sharing_city_seoul .share_seoul_logo_2 { margin-left:80px; width:365px; height:233px; float:right; background:url(./images/why.jpg) no-repeat; }
+		#sharing_city_seoul .share_seoul_logo_3 { margin-left:80px; width:365px; height:369px; float:right; background:url(./images/how.png) no-repeat; }
+		#sharing_city_seoul .share_seoul_logo_4 { margin-left:80px; width:365px; height:243px; float:right; background:url(./images/whatkind.jpg) no-repeat; }
+			
+	#sharing_service { position:relative; overflow:hidden; height:560px; background:#fff; }
+		#sharing_service h2 { font-weight:normal; margin:0; padding:0; height:50px; border-bottom:1px solid #00C1C0; font-size:20px; line-height:50px; text-indent:30px; }
+		
+		#sharing_service h3 { color:#00c1c0; font-size: 52px; margin:0; padding:0; margin-top:50px; font-weight:bold; text-align:center; margin-bottom:30px; }
+		#sharing_service p { margin:0; padding:0; color:#00c1c0; font-size:18px; line-height:20px; text-align:center; }
+		
+		#sharing_service .arrow_wrap { position:absolute; width:930px; left:50%; margin-left:-465px; z-index:10; }
+		
+		#sharing_service a.arrow_left,
+		#sharing_service a.arrow_right { position:absolute;width:15px; height:25px; text-indent:-1000px; overflow:hidden; background:url(./images/icon_arrow.png) no-repeat; }
+		
+		#sharing_service a.arrow_left.disabled,
+		#sharing_service a.arrow_right.disabled { opacity:0.25; } 
+		
+		#sharing_service a.arrow_left { left:-40px; top:50px; background-position:-30px 0px; }
+			#sharing_service a.arrow_left:hover { background-position:-45px 0px; }
+			#sharing_service a.arrow_left.disabled:hover { background-position:-30px 0px; }
+
+		#sharing_service a.arrow_right { right:-40px; top:50px; background-position:0px 0px; }
+			#sharing_service a.arrow_right:hover { background-position:-15px 0px; }
+			#sharing_service a.arrow_right.disabled:hover { background-position:0px 0px; }
+		
+        #sharing_service #sharing_service_wrap { margin-top:40px; margin-bottom:40px; width: 100%; height: 130px; position: relative; }
+             #sharing_service #sharing_service_wrap .organization_business_data { position:absolute; left:0; top:0; width:100%; height:100%; }
+             
+        #sharing_service .sharing_service_data { position:relative; left:0; }
+             
+		#sharing_service .sharing_service_list { position:absolute; left:0; top:0; width:100%; height:130px; overflow:hidden;}
+		#sharing_service .sharing_service_list ul { width:930px; list-style:none; margin:0 auto; padding:0; } 
+			#sharing_service .sharing_service_list ul li { float:left; width:130px; height:130px; margin-bottom:40px; }
+			#sharing_service .sharing_service_list ul li a { display:inline-block; width:130px; height:130px; overflow:hidden; background:#000; display:table-cell; vertical-align:middle; color:#fff; font-weight:bold; text-decoration:none; text-align:center; }
+			
+			#sharing_service .sharing_service_list ul li { margin-right:70px; }
+			#sharing_service .sharing_service_list ul li:nth-child(5n) { margin-right:0; }
+			
+            #sharing_service .sharing_service_list ul li a img { width:130px; }
+			
+			#sharing_service .page_nav { position:absolute; right:0; top:68px; width:100%; height:30px; letter-spacing:0; font-size:0; text-align:right; z-index:100; }
+			#sharing_service .page_nav .page_nav_data { width:930px; margin:0 auto; }
+			
+				#sharing_service .page_nav a.arrow { display:inline-block; vertical-align:middle; border-bottom:1px solid #fff; width:15px; height:25px; text-indent:-1000px; overflow:hidden; background:url(./images/icon_arrow.png) no-repeat; margin-right:14px; }
+					
+					#sharing_service .page_nav a.arrow_left { background-position:-90px 0px; }
+					#sharing_service .page_nav a.arrow_left:hover { background-position:-105px 0px; }
+					
+					#sharing_service .page_nav a.arrow_right { background-position:-60px 0px; }
+					#sharing_service .page_nav a.arrow_right:hover { background-position:-75px 0px; }
+			
+				#sharing_service .page_nav a.more { display:inline-block; font-size:12px; font-weight:bold; vertical-align:middle; border-bottom:1px solid #fff; padding-left:5px; padding-right:5px; height:25px; line-height:25px; color:#fff; text-decoration:none; }
+					#sharing_service  .page_nav a.more:hover { color:#00c1c0; background:#fff; }
+            
+            #sharing_service .see_service_list { text-align:center; }
+                #sharing_service .see_service_list a { display:inline-block; width:150px; height:40px; line-height:40px; font-size:14px; text-align:center; border:1px solid #00C1C0; color:#00C1C0; text-decoration:none; }
+                #sharing_service .see_service_list a:hover { background:#00c1c0; color:#fff; }
+                
+		#sponsor_wrap { width:100%; height:45px; background:#B0A389; border-bottom:1px solid #fff; }
+		  #sharing_service #sponsor_wrap { position:absolute; left:0; bottom:0; right:0; }
+		
+			#sponsor_wrap ul { list-style:none; margin:0; padding:0; }
+			 #sponsor_wrap ul li { display:inline-block; margin-right:14px; }
+			 #sponsor_wrap ul li:last-child { margin-right:0; }
+			 
+			#sponsor_wrap ul li.seoul_mg a { display:inline-block; width:112px; height:45px; background:url(./images/logo_seoul.png) no-repeat -112px 0; text-indent:-1000px; overflow:hidden; }
+				#sponsor_wrap ul li.seoul_mg a:hover { background-position:-224px 0; }
+
+			#sponsor_wrap ul li.bloter a { display:inline-block; width:140px; height:45px; background:url(./images/logo_bloter.png) no-repeat -140px 0; text-indent:-1000px; overflow:hidden; }
+				#sponsor_wrap ul li.bloter a:hover { background-position:-280px 0; }
+				
+            #sponsor_wrap ul li.colcons a { display:inline-block; width:135px; height:45px; background:url(./images/logo_colcons.png) no-repeat 0 0; text-indent:-1000px; overflow:hidden; }
+                #sponsor_wrap ul li.colcons a:hover { background-position:-135px 0; }
+                
+            #sponsor_wrap ul li.shareable a { display:inline-block; width:109px; height:45px; background:url(./images/logo_shareable.png) no-repeat 0 0; text-indent:-1000px; overflow:hidden; }
+                #sponsor_wrap ul li.shareable a:hover { background-position:-109px 0; }
+
+	#footer_area { height: 160px; background:#2d353f; }
+		#footer_area a { text-decoration:none; }
+		#footer_area a:hover { text-decoration:underline; }
+
+	#footer { padding-top:25px; }
+
+		#footer .copyrights { margin-bottom: 5px; }
+		#footer .cckorea { float: left; margin-bottom:10px; }
+	
+		#footer .ccl-logo{ float: left; clear: both; width:80px; }
+			#footer .ccl-logo a { opacity: 0.5; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
+			#footer .ccl-logo a:hover {	opacity: 1; }
+	
+		#footer .ccl-text{ float: left; font-size: 11px; color: #666666; line-height: 15px; text-align: left; margin-left: 10px; }
+	 		#footer .ccl-text a { color: #666666; font-family: 'Apple Gothic', 'Nanum Gothic',Dotum; }
+			#footer .ccl-text a:hover{ color: white !important; }
+	
+		#footer .footer_menu{ float: right; font-size: 12px; font-family: 'Apple Gothic', 'Nanum Gothic', Dotum; color: #666666; }
+	
+			#footer .footer_menu a { margin: 0px 3px; color: white; }
+			#footer .footer_menu a:hover{ color: white !important; text-decoration: none; }
+		
+		#footer .contact { float: right; font-family: 'Nanum Gothic','Apple Gothic', Dotum; font-size: 12px; color: #666666; text-align: right; }
+			#footer .contact a { color: #666666; }
+			#footer .contact a:hover{ color: #fff; }
+	
+	/* Pagination */
+	.navigation  { color:#808080; font-size:15px; margin-top:50px; margin-bottom:70px; text-align:right; }
+	   .navigation .pagination  {}
+	   .navigation .pagination .page-numbers { display:inline-block; width:30px; line-height:30px; text-align:center; color:#808080; text-decoration:none; }
+	   .navigation .pagination .page-numbers:hover { text-decoration:underline; }
+	   
+	   .navigation .pagination .current { color:#000; font-weight:bold; }
+	
+	a.goto_top { position:fixed; right:20px; bottom:20px; display:block; width:40px; height:40px; text-indent:-1000px; overflow:hidden; background:url(./images/icon_goto_top.png) no-repeat center #eee; box-shadow:0px 1px 1px rgba(0,0,0,0.3); }
+			
+	/* CONTENT */
+	#page-header { margin-top:92px; margin-bottom:30px; }
+    #page-header.have_tabs {  }
+
+        #page-header .content_width { margin-bottom:30px; padding-bottom:30px; border-bottom:1px solid #00C1C0; }
+    
+	   #page-header h1 { margin:0; padding:0; padding-left:52px; font-size:36px; line-height:30px; color:#00C1C0; font-weight:bold; height:70px; }
+       #page-header h1.news { background:url(./images/bg_icon_news.png) no-repeat left top; }
+       #page-header h1.org { background:url(./images/bg_icon_org.png) no-repeat left top; }
+	
+	   #page-header ul { list-style:none; margin:0; padding:0; margin-left:50px; margin-right:50px; }
+	   #page-header ul li { float:left; width:150px; }
+	   #page-header ul li a { display:inline-block; line-height:30px; font-size:15px; color:#00C1C0; text-decoration:none; }
+	
+	#organization_wrap { position:relative; }
+	   #organization_wrap .organization_wrap { position:relative; margin-top:30px; border-bottom:1px solid #00C1C0; padding-left:50px; padding-right:50px; }
+	   #organization_wrap .organization_wrap:last-child { border-bottom:0; }
+	   
+	       #organization_wrap .organization_category { position:absolute; width:150px; font-size:18px; font-weight:bold; color:#00C1C0; }
+	       #organization_wrap .organization_data { position:relative; margin-left:150px; }
+	           #organization_wrap .organization_data ul { list-style:none; margin:0; padding:0; }
+	           #organization_wrap .organization_data ul li { margin-bottom:30px; min-height:130px; }
+	           
+               #organization_wrap .organization_data .organization_thumbnail { position:absolute; width:130px; height:130px; overflow:hidden; background:#333; }
+               #organization_wrap .organization_data .organization_thumbnail img { width:130px; }
+               #organization_wrap .organization_data .organization_content { margin-left:160px; position:relative; }
+                    #organization_wrap .organization_data .organization_content h3 { margin:0; padding:0; padding-right:50px; font-size:16px; line-height:16px; margin-bottom:14px; color:#000; font-weight:bold; }
+                    #organization_wrap .organization_data .organization_content p { margin:0; padding:0; font-size:15px; line-height:25px; color:#000; }
+                
+                    #organization_wrap .organization_data .organization_content a.website { display:inline-block; position:absolute; right:0; top:0; color:#00C1C0; text-decoration:none; }
+	                #organization_wrap .organization_data .organization_content a.website:hover { text-decoration:underline; }
+	                
+	#entry { color:#333; }
+	   #entry .entry-wrap { margin-left:50px; margin-right:50px; margin-bottom:30px; }
+	       #entry .entry-wrap .entry-thumbnail { float:left; width:180px; height:180px; margin-right:30px; background:no-repeat center #333; background-size:cover; overflow:hidden; }
+	       #entry .entry-wrap .entry-content { float:left; width:800px; }
+	           #entry .entry-wrap .entry-content h2 { font-size:18px; font-weight:bold; color:#000; margin:0; padding:0; margin-bottom:12px; }
+	               #entry .entry-wrap .entry-content h2 a { color:#000; text-decoration:none; }
+	               #entry .entry-wrap .entry-content h2 a:hover { text-decoration:underline; }
+	               
+	           #entry .entry-wrap .entry-content span.entry-extra { font-size:15px; color:#808080; }
+	           #entry .entry-wrap .entry-content div.entry-description { margin:0; padding:0; font-size:15px; line-height:25px; color:#000; margin-top:20px; }
+			       #entry .entry-wrap .entry-content div.entry-description p { margin:0; padding:0; }
+		
+		       #entry #entry-wrap-in-single { border-top:2px solid #aaa; padding-top:45px; margin-bottom:45px; }
+		       
+		       #entry #entry-wrap-in-single a.articles { display:block; background:#eee; color:#333; text-decoration:none; line-height:40px; padding:10px; font-size:18px; font-weight:bold; text-align:center; border-radius:4px; }
+		       #entry #entry-wrap-in-single a.articles:hover { background:#ddd; }
+		       #entry #entry-wrap-in-single a.articles:active { background:#ccc; box-shadow:inset 0px 1px 1px rgba(0,0,0,0.1); }
+		       
+		       #entry #entry-wrap-in-single a.articles i { display:inline-block; background:url(./images/icon_list.png) no-repeat; width:24px; height:24px; vertical-align:middle; margin-right:10px; }
+		       
+	#entry.is_single { margin-top:95px; }    
+		#entry .content-wrap {}
+		#entry .content-wrap h2 { font-size:30px; font-weight:bold; padding-bottom:40px; border-bottom:2px solid #00c1c0; margin-bottom:30px; }
+			#entry .content-wrap h2 a { color:#000; text-decoration:none; }
+			#entry .content-wrap h2 a:hover { text-decoration:underline; }
+		
+		#entry .content-wrap span.entry-extra { font-size:15px; color:#808080; }
+		#entry .content-wrap div.entry-description { font-size:15px; margin-top: 45px; line-height:28px; margin-bottom:45px; }
+		
+		
+            /************************************************************************************
+            MEDIA QUERIES
+            *************************************************************************************/
+            
+            @media screen and (max-width: 1130px) {
+                .content_width { width:100% }
+                
+                #header #logo { margin-left:10px; }
+                
+                #header #nav ul li#nav_introduce { display:inline-block; }
+                #header #nav ul li#nav_information, 
+                #header #nav ul li#nav_about_share_hub, 
+                #header #nav ul li#nav_sharing_city_seoul, 
+                #header #nav ul li#nav_sharing_service { display:none; }
+                
+                #information #news_area .news_data { position:relative; width:47.5%; margin-right:5%; height:115px; overflow:hidden; }
+                #information #news_area .news_data_right { margin-right:0; }
+                
+                #information #news_area .news_data .thumbnail { float:none; position:absolute; width:60px; height:60px; left:0; top:0; }
+                #information #news_area .news_data .information { float:none; margin-left:80px; width:auto; }
+                
+                #sharing_city_seoul ul#sharing_tabs li span.title { font-size:26px; }
+                #sharing_city_seoul ul#sharing_tabs li span.description { font-size:10px; padding-left:10px; padding-right:10px; }
+                
+                #sharing_city_seoul #sharing_content .description { padding-left:20px; padding-right:20px; }    
+                #sharing_city_seoul #sharing_content .bt_download_report { left:20px; }
+                #sharing_city_seoul #sharing_content .bt_summary_download_report { bottom:18px; }
+                
+                #sharing_service .sharing_service_list ul { width:730px; }
+                #sharing_service .sharing_service_list ul li:nth-child(4n)  { margin-right:0; }
+                
+                #sharing_service .arrow_wrap { width:730px; margin-left:-365px; }
+                
+                #sharing_service h3,
+                #sharing_service p { padding-left:20px; padding-right:20px; }
+                
+                #entry .entry-wrap { position:relative; margin-left:20px; margin-right:20px; }
+                #entry .entry-wrap .entry-thumbnail { width:100px; height:100px; float:none; position:absolute; }
+                #entry .entry-wrap .entry-content { float:none; width:auto; margin-left:120px; }
+                
+                #entry .content-wrap h2 { margin-left:10px; margin-right:10px; }
+                #entry .content-wrap span.entry-extra { margin-left:10px; margin-right:10px; }
+                #entry .content-wrap div.entry-description { margin-left:10px; margin-right:10px; }
+            }
+            
+            @media screen and (max-width:845px) {
+            	
+                #sharing_service .sharing_service_list ul { width:530px; }
+                #sharing_service .sharing_service_list ul li:nth-child(3n)  { margin-right:0; }
+                
+                #sharing_service .arrow_wrap { width:530px; margin-left:-265px; }
+            }
+            
+            @media screen and (max-width: 782px) {
+                body.admin-bar #header { top:45px; position:absolute; }
+                body.admin-bar #header #nav_popup { top:105px; }
+
+                #header #nav ul li#nav_introduce,
+                #header #nav ul li#nav_news,
+                #header #nav ul li#nav_service,
+                #header #nav ul li#nav_korean { display:none; }
+                
+                #header #nav ul li#nav_menu { display:inline-block; }
+                
+                #information #news_area .news_data .information p { font-size:13px; color:#eee; }
+                
+                #about_share_hub .about_article .about_article_content h4 { font-size:40px; line-height:50px; }
+                
+                #organization_wrap .organization_data .organization_thumbnail { width:100px; height:100px; }
+                #organization_wrap .organization_data .organization_content { margin-left:130px; }
+                
+            }
+
+            @media screen and (max-width: 760px) {
+                #information #news_area .news_data .thumbnail { display:none; }
+                #information #news_area .news_data .information { margin-left:0; }
+                
+                #page-header ul.tabs { display:none; }
+                #page-header .content_width { padding-bottom:0; margin-left: 10px; margin-right: 10px; width: auto; } 
+                
+                #organization_wrap .organization_wrap { padding-left:0px; padding-right:0px;  }     
+
+            }
+
+            @media screen and (max-width: 670px) {
+                #information { min-height:600px; }
+                #information .main_title { font-size:45px; padding-left:10px; padding-right:10px; }
+                #information .sub_title { display:none; }
+                
+                #about_share_hub .about_article .about_article_content { padding-bottom:40px; }
+                
+                #sharing_city_seoul #sharing_content {  position: relative; top: 0; left: 0; right: 0; bottom: 0; }
+                #sharing_city_seoul #sharing_content .description { padding-bottom:180px; font-size:16px; line-height:20px; }
+                
+                #sharing_city_seoul #sharing_content .bt_download_report { bottom:70px; left:20px; }
+                #sharing_city_seoul #sharing_content .bt_summary_download_report { bottom:20px; }
+                
+                #sharing_city_seoul ul#sharing_tabs { height:130px; }
+                #sharing_city_seoul ul#sharing_tabs li { height:130px; }
+                #sharing_city_seoul ul#sharing_tabs li span.description { display:none; }
+                #sharing_service h3 { font-size:30px; }
+                
+                #sharing_service { height:auto; }
+                #sharing_service .see_service_list { margin-bottom:30px; }
+                #sharing_service #sponsor_wrap { position:static; }
+            }
+            
+            @media screen and (max-width:630px) {
+                #sharing_service .sharing_service_list ul { width:330px; }
+                #sharing_service .sharing_service_list ul li:nth-child(2n)  { margin-right:0; }
+                
+                #sharing_service .arrow_wrap { width:330px; margin-left:-165px; }
+            }
+            
+            @media screen and (max-width: 600px) {
+                #information .main_title { font-size:30px; }
+                
+                #page-header h1.org { margin-left:0; }
+                
+                #organization_wrap .organization_wrap { margin-left:10px; margin-right:10px; }
+                 
+                #organization_wrap .organization_category { position:static; margin-bottom:20px; padding-left:10px; }
+                #organization_wrap .organization_data { margin-left:0; }
+                
+                #organization_wrap .organization_data .organization_thumbnail { width:80px; height:80px; }
+                #organization_wrap .organization_data .organization_content { margin-left:100px; }
+                
+                #organization_wrap .organization_data ul li { border-bottom:1px dotted #ccc; padding-left:10px; padding-right:10px; padding-bottom:20px; }
+                #organization_wrap .organization_data ul li:last-child { border-bottom:0; padding-bottom:0; }
+            }
+            
+            @media screen and (max-width: 560px) {
+                #sponsor_wrap { text-align:center; height:96px; }
+            }
+            
+            /* iphone landscape */
+            @media screen and (max-width: 480px) {
+                #information #news_area .news_data .information h3 { height:40px; line-height:20px; overflow:hidden; }
+            
+                #about_share_hub .about_article { float:none; width:100%; }
+                #about_share_hub .about_article .about_article_content h4  { font-size:20px; line-height:24px; font-weight:bold; }
+                
+                #sharing_city_seoul ul#sharing_tabs li span.title { font-size:20px; }
+                #sharing_city_seoul #sharing_content .description { padding-top:40px; }
+                
+                #sharing_service .sharing_service_list ul { width:300px; }
+                #sharing_service .sharing_service_list ul li { margin-right:40px; }
+                
+                #sharing_service .arrow_wrap { width:300px; margin-left:-150px; }
+                
+                #sharing_city_seoul #sharing_content .bt_summary_download_report a.text { width:220px; }
+                #sharing_city_seoul #sharing_content .bt_download_report a.text span.long { display:none; }
+                #sharing_city_seoul #sharing_content .bt_download_report a.text span.short { display:inline-block;; }
+            }
+            
+            /* iphone portrait */
+            @media screen and (max-width: 320px) {
+            }
+                 

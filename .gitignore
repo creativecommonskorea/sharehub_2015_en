@@ -1,0 +1,12 @@
+composer.lock
+vendor
+
+
+# Ignore environment config file
+.env
+
+# Ignore wordpress, wp-content except active themes
+docroot/wordpress
+!docroot/wp-content
+docroot/wp-content/*
+!docroot/wp-content/themes
