@@ -113,9 +113,18 @@
 			
 			#about_share_hub ul#share_hub_timeline li .title { font-size:15px; margin-bottom:20px; }
 			
-		#about_share_hub  { }
 			#about_share_hub .about_article { position:relative; width:50%; height:100%; float:left; box-sizing:border-box;}
 			#about_share_hub .about_article_right { }
+
+			.btn { display:inline-block; text-align:center; border:1px solid #00C1C0; color:#00C1C0; text-decoration:none; }
+            .btn:hover { background:#00c1c0; color:#fff; }
+			.btn-annual {
+				width: 400px; height: 50px; line-height: 200%; font-size:24px;
+			}
+			.center-block {
+				display: block;
+				margin: 0 auto;
+			}
 				
 				#about_share_hub .about_article .about_article_content { padding-left:30px; padding-right:30px; } 
 				#about_share_hub .about_article .about_article_content h4 { margin:0; padding:0; font-weight:normal; font-size:60px; line-height:62px; margin-top:45px; margin-bottom:45px; padding-bottom:45px; color:#00c1c0; border-bottom:1px solid #00c1c0;  }

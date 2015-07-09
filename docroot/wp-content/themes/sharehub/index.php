@@ -7,11 +7,6 @@
 				Share Hub is a project that curates various sharing culture information,<br />and connects individuals and groups interested in better sharing.<br />
 				Share Hub is powered by Creative Commons Korea,<br />and supported by Seoul City according to “Seoul Metropolitan Government Act for Promoting Sharing.”
 			</div>
-			<h3 style="text-align: center;"><a style="color: #fff; text-decoration:none; width: 400px; height: 50px; line-height: 200%; font-size:24px; display: inline-block; background:url(/wp-content/themes/sharehub/images/bg_nav_selected.png) repeat; " target="_blank" href="//sharehub.kr/2014/en">2014 ShareHub Annual Report</a></h3>
-			<div class="sub_title">
-				<p>We’re thrilled to introduce the 2014 ShareHub Annual Report for ShareHub Supporter ! <br />
-				See the Sharehub’s movement for the last two years. </p>
-			</div>
 		</div>
 		
 		<!--<div id="button_tabs">
@@ -103,6 +98,9 @@
                             Especially, Share Hub is sponsored by Seoul City under “Seoul Metropolitan Government Act for Promoting Sharing.” This Act includes opening City Goverment data and contents, sharing municipally owned idle spaces, and supporting sharing economy services. You can reach Share Hub at <a href="mailto:creative@cckorea.org">creative@cckorea.org</a>.
                         </p>
 					</div>
+					<p>&nbsp;</p>
+					<a class="btn btn-annual center-block" target="_blank" href="//sharehub.kr/2014/en">2014 ShareHub Annual Report</a></h3>
+		
 				</div>
 				<div class="clear"></div>
 			</div>
