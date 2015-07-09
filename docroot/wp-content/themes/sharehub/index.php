@@ -193,16 +193,17 @@
 			</div>
 		</div>-->
 		
-		<?php 
-		  $orgs = array();
-          
-          foreach($organizations as $org) {
-              $orgs = array_merge($orgs, $org);
-          }
-          
-          shuffle($orgs);
+		<?php
+			/**
+			 * 공유기업 카테고리 없이 임의 순서로 정렬한 전체 목록 배열 준비
+			 */
+			$orgs = array();
+			foreach($services as $org) {
+			  $orgs = array_merge($orgs, $org);
+			}
+			shuffle($orgs);
         ?>
-		
+
 		  <div id="sharing_service_wrap">
 		  	  <div class="arrow_wrap">
 		      	<a class="arrow_left disabled" href="#" onclick="sliceServiceList(1); return false;">left</a>
