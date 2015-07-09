@@ -98,8 +98,7 @@
                             Especially, Share Hub is sponsored by Seoul City under “Seoul Metropolitan Government Act for Promoting Sharing.” This Act includes opening City Goverment data and contents, sharing municipally owned idle spaces, and supporting sharing economy services. You can reach Share Hub at <a href="mailto:creative@cckorea.org">creative@cckorea.org</a>.
                         </p>
 					</div>
-					<p>&nbsp;</p>
-					<a class="btn btn-annual center-block" target="_blank" href="//sharehub.kr/2014/en">2014 ShareHub Annual Report</a></h3>
+					<p><a class="btn btn-annual center-block" target="_blank" href="//sharehub.kr/2014/en">2014 ShareHub Annual Report</a></p>
 		
 				</div>
 				<div class="clear"></div>
@@ -166,16 +165,22 @@
 					• Improvement on existing statutes and institutions
 					to be more sharing-friendly
 				</div>
-				
-				<span class="bt_download_report">
-					<a href="<?php echo get_template_directory_uri(); ?>/report.pdf" class="text"><span>DOWNLOAD FULL REPORT</span></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/report.pdf" class="icon"><span>DOWNLOAD</span></a>
-				</span>
-				
-				<span class="bt_download_report bt_summary_download_report">
-					<a href="<?php echo get_template_directory_uri(); ?>/executive_summary_report.pdf" class="text"><span class="long">DOWNLOAD EXECUTIVE SUMMARY REPORT</span><span class="short">SUMMARY REPORT</span></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/executive_summary_report.pdf" class="icon"><span>DOWNLOAD EXECUTIVE SUMMARY REPORT</span></a>
-				</span>
+
+				<div class="report-downloads">
+					<div class="bt_download_report bt_summary_download_report year_2015">
+						<a href="/wp-content/uploads/reports/executive_summary_report_2015.pdf" class="text"><span class="long">DOWNLOAD EXECUTIVE SUMMARY REPORT (2015)</span><span class="short">SUMMARY REPORT (2015)</span></a>
+						<a href="/wp-content/uploads/reports/executive_summary_report_2015.pdf" class="icon"><span>DOWNLOAD EXECUTIVE SUMMARY REPORT (2015)</span></a>
+					</div>
+					<div class="bt_download_report bt_summary_download_report year_2014">
+						<a href="/wp-content/uploads/reports/executive_summary_report_2014.pdf" class="text"><span class="long">DOWNLOAD EXECUTIVE SUMMARY REPORT (2014)</span><span class="short">SUMMARY REPORT (2014)</span></a>
+						<a href="/wp-content/uploads/reports/executive_summary_report_2014.pdf" class="icon"><span>DOWNLOAD EXECUTIVE SUMMARY REPORT (2014)</span></a>
+					</div>
+					<div class="bt_download_report">
+						<a href="/wp-content/uploads/reports/full_report_2014.pdf" class="text"><span>DOWNLOAD FULL REPORT (2014)</span></a>
+						<a href="/wp-content/uploads/reports/full_report_2014.pdf" class="icon"><span>DOWNLOAD FULL REPORT (2014)</span></a>
+					</div>	
+				</div>
+
 			</div>
 		</div>
 	</div>

@@ -119,7 +119,8 @@
 			.btn { display:inline-block; text-align:center; border:1px solid #00C1C0; color:#00C1C0; text-decoration:none; }
             .btn:hover { background:#00c1c0; color:#fff; }
 			.btn-annual {
-				width: 400px; height: 50px; line-height: 200%; font-size:24px;
+				width: 80%; line-height: 200%; font-size:24px;
+				margin-bottom: 20px;
 			}
 			.center-block {
 				display: block;
@@ -149,14 +150,20 @@
 			#sharing_city_seoul #sharing_content .description { display:none; font-size:20px; line-height:25px; padding-top:70px; }
 			#sharing_city_seoul #sharing_content .viewed { display:block; }
 			
-			#sharing_city_seoul #sharing_content .bt_download_report { position:absolute; left:0; bottom:70px; }
-			#sharing_city_seoul #sharing_content .bt_summary_download_report { left:280px; }
+			/*#sharing_city_seoul #sharing_content .bt_download_report { position:absolute; left:800px; bottom:70px; }
+			#sharing_city_seoul #sharing_content .bt_summary_download_report { left:0px; }
+			#sharing_city_seoul #sharing_content .bt_summary_download_report.year_2014 { left: 460px;}*/
+
+			#sharing_city_seoul #sharing_content .report-downloads {
+				margin-top: 40px;
+			}
+			#sharing_city_seoul #sharing_content .bt_download_report { margin: 15px 0; }
 			
 				#sharing_city_seoul #sharing_content .bt_download_report a { display:inline-block; vertical-align:middle;  height:40px; text-align:center; line-height:40px; color:#fff; background:url(./images/bg_download_report.png) repeat;  }
 				#sharing_city_seoul #sharing_content .bt_download_report a:hover { background:url(./images/bg_download_report_selected.png) repeat; }
 				
-				#sharing_city_seoul #sharing_content .bt_download_report a.text { text-decoration:none; font-size:14px; width:220px; }
-				#sharing_city_seoul #sharing_content .bt_summary_download_report a.text { width:350px; }
+				#sharing_city_seoul #sharing_content .bt_download_report a.text { text-decoration:none; font-size:14px; width:280px; }
+				#sharing_city_seoul #sharing_content .bt_summary_download_report a.text { width: 410px; }
 				#sharing_city_seoul #sharing_content .bt_download_report a.text span { display:inline-block; padding-left:18px; background:url(./images/icon_sharing1.png) no-repeat left center; }
 				#sharing_city_seoul #sharing_content .bt_download_report a.text span.short { display:none; }
 				
