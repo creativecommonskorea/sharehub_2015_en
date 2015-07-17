@@ -244,7 +244,8 @@
            </div>
        
        <div class="see_service_list">
-            <a href="/services">SEE SERVICE LIST</a>
+            <a href="/services">SEE SERVICE LIST</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/services-infographics">SEE INFOGRAPHICS</a>
        </div>
 		
 		<div id="sponsor_wrap">

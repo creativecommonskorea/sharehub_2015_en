@@ -1,4 +1,4 @@
-	
+		
 	body { padding:0; margin:0; background:#666; font-family: 'Nanum Gothic', Helvetica, sans-serif, 'Apple Gothic', 'Malgun Gothic', Dotum; font-size: 12px; color:#fff; }
 	
 	body.single,
@@ -292,13 +292,18 @@
 
         #page-header .content_width { margin-bottom:30px; padding-bottom:30px; border-bottom:1px solid #00C1C0; }
     
-	   #page-header h1 { margin:0; padding:0; padding-left:52px; font-size:36px; line-height:30px; color:#00C1C0; font-weight:bold; height:70px; }
-       #page-header h1.news { background:url(./images/bg_icon_news.png) no-repeat left top; }
-       #page-header h1.org { background:url(./images/bg_icon_org.png) no-repeat left top; }
+	   	#page-header h1 { margin:0; padding:0; padding-left:52px; font-size:36px; line-height:30px; color:#00C1C0; font-weight:bold; height:70px; }
+       	#page-header h1.news { background:url(./images/bg_icon_news.png) no-repeat left top; }
+       	#page-header h1.org { background:url(./images/bg_icon_org.png) no-repeat left top; }
 	
-	   #page-header ul { list-style:none; margin:0; padding:0; margin-left:50px; margin-right:50px; }
-	   #page-header ul li { float:left; width:150px; }
-	   #page-header ul li a { display:inline-block; line-height:30px; font-size:15px; color:#00C1C0; text-decoration:none; }
+	   	#page-header ul { list-style:none; margin:0; padding:0; margin-left:50px; margin-right:50px; }
+	   	#page-header ul li { float:left; width:150px; }
+	   	#page-header ul li a { display:inline-block; line-height:30px; font-size:15px; color:#00C1C0; text-decoration:none; }
+
+		#page-header .see_service_list { text-align:center; float: right; }
+            #page-header .see_service_list a { display:inline-block; width:150px; height:40px; line-height:40px; font-size:14px; text-align:center; border:1px solid #00C1C0; color:#00C1C0; text-decoration:none; }
+            #page-header .see_service_list a:hover { background:#00c1c0; color:#fff; }
+
 	
 	#organization_wrap { position:relative; }
 	   #organization_wrap .organization_wrap { position:relative; margin-top:30px; border-bottom:1px solid #00C1C0; padding-left:50px; padding-right:50px; }
