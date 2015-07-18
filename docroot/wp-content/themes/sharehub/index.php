@@ -7,11 +7,6 @@
 				Share Hub is a project that curates various sharing culture information,<br />and connects individuals and groups interested in better sharing.<br />
 				Share Hub is powered by Creative Commons Korea,<br />and supported by Seoul City according to “Seoul Metropolitan Government Act for Promoting Sharing.”
 			</div>
-			<h3 style="text-align: center;"><a style="color: #fff; text-decoration:none; width: 400px; height: 50px; line-height: 200%; font-size:24px; display: inline-block; background:url(/wp-content/themes/sharehub/images/bg_nav_selected.png) repeat; " target="_blank" href="//sharehub.kr/2014/en">2014 ShareHub Annual Report</a></h3>
-			<div class="sub_title">
-				<p>We’re thrilled to introduce the 2014 ShareHub Annual Report for ShareHub Supporter ! <br />
-				See the Sharehub’s movement for the last two years. </p>
-			</div>
 		</div>
 		
 		<!--<div id="button_tabs">
@@ -103,6 +98,8 @@
                             Especially, Share Hub is sponsored by Seoul City under “Seoul Metropolitan Government Act for Promoting Sharing.” This Act includes opening City Goverment data and contents, sharing municipally owned idle spaces, and supporting sharing economy services. You can reach Share Hub at <a href="mailto:creative@cckorea.org">creative@cckorea.org</a>.
                         </p>
 					</div>
+					<p><a class="btn btn-annual center-block" target="_blank" href="//sharehub.kr/2014/en">2014 ShareHub Annual Report</a></p>
+		
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -168,16 +165,22 @@
 					• Improvement on existing statutes and institutions
 					to be more sharing-friendly
 				</div>
-				
-				<span class="bt_download_report">
-					<a href="<?php echo get_template_directory_uri(); ?>/report.pdf" class="text"><span>DOWNLOAD FULL REPORT</span></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/report.pdf" class="icon"><span>DOWNLOAD</span></a>
-				</span>
-				
-				<span class="bt_download_report bt_summary_download_report">
-					<a href="<?php echo get_template_directory_uri(); ?>/executive_summary_report.pdf" class="text"><span class="long">DOWNLOAD EXECUTIVE SUMMARY REPORT</span><span class="short">SUMMARY REPORT</span></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/executive_summary_report.pdf" class="icon"><span>DOWNLOAD EXECUTIVE SUMMARY REPORT</span></a>
-				</span>
+
+				<div class="report-downloads">
+					<div class="bt_download_report bt_summary_download_report year_2015">
+						<a href="/wp-content/uploads/reports/executive_summary_report_2015.pdf" class="text"><span class="long">DOWNLOAD EXECUTIVE SUMMARY REPORT (2015)</span><span class="short">SUMMARY REPORT (2015)</span></a>
+						<a href="/wp-content/uploads/reports/executive_summary_report_2015.pdf" class="icon"><span>DOWNLOAD EXECUTIVE SUMMARY REPORT (2015)</span></a>
+					</div>
+					<div class="bt_download_report bt_summary_download_report year_2014">
+						<a href="/wp-content/uploads/reports/executive_summary_report_2014.pdf" class="text"><span class="long">DOWNLOAD EXECUTIVE SUMMARY REPORT (2014)</span><span class="short">SUMMARY REPORT (2014)</span></a>
+						<a href="/wp-content/uploads/reports/executive_summary_report_2014.pdf" class="icon"><span>DOWNLOAD EXECUTIVE SUMMARY REPORT (2014)</span></a>
+					</div>
+					<div class="bt_download_report">
+						<a href="/wp-content/uploads/reports/full_report_2014.pdf" class="text"><span>DOWNLOAD FULL REPORT (2014)</span></a>
+						<a href="/wp-content/uploads/reports/full_report_2014.pdf" class="icon"><span>DOWNLOAD FULL REPORT (2014)</span></a>
+					</div>	
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -195,16 +198,17 @@
 			</div>
 		</div>-->
 		
-		<?php 
-		  $orgs = array();
-          
-          foreach($organizations as $org) {
-              $orgs = array_merge($orgs, $org);
-          }
-          
-          shuffle($orgs);
+		<?php
+			/**
+			 * 공유기업 카테고리 없이 임의 순서로 정렬한 전체 목록 배열 준비
+			 */
+			$orgs = array();
+			foreach($services as $org) {
+			  $orgs = array_merge($orgs, $org);
+			}
+			shuffle($orgs);
         ?>
-		
+
 		  <div id="sharing_service_wrap">
 		  	  <div class="arrow_wrap">
 		      	<a class="arrow_left disabled" href="#" onclick="sliceServiceList(1); return false;">left</a>
@@ -240,7 +244,8 @@
            </div>
        
        <div class="see_service_list">
-            <a href="/services">SEE SERVICE LIST</a>
+            <a href="/services">SEE SERVICE LIST</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/services-infographics">SEE INFOGRAPHICS</a>
        </div>
 		
 		<div id="sponsor_wrap">

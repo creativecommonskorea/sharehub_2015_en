@@ -1,4 +1,4 @@
-	
+		
 	body { padding:0; margin:0; background:#666; font-family: 'Nanum Gothic', Helvetica, sans-serif, 'Apple Gothic', 'Malgun Gothic', Dotum; font-size: 12px; color:#fff; }
 	
 	body.single,
@@ -113,9 +113,20 @@
 			
 			#about_share_hub ul#share_hub_timeline li .title { font-size:15px; margin-bottom:20px; }
 			
-		#about_share_hub  { }
 			#about_share_hub .about_article { position:relative; width:50%; height:100%; float:left; box-sizing:border-box;}
 			#about_share_hub .about_article_right { }
+
+			.btn { display:inline-block; text-align:center; border:1px solid #00C1C0; color:#00C1C0; text-decoration:none; }
+            .btn:hover { background:#00c1c0; color:#fff; }
+			.btn-annual {
+				width: 80%; line-height: 200%; font-size:24px;
+				margin-top: 20px; margin-bottom: 20px;
+			}
+			.center-block {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
 				
 				#about_share_hub .about_article .about_article_content { padding-left:30px; padding-right:30px; } 
 				#about_share_hub .about_article .about_article_content h4 { margin:0; padding:0; font-weight:normal; font-size:60px; line-height:62px; margin-top:45px; margin-bottom:45px; padding-bottom:45px; color:#00c1c0; border-bottom:1px solid #00c1c0;  }
@@ -140,14 +151,20 @@
 			#sharing_city_seoul #sharing_content .description { display:none; font-size:20px; line-height:25px; padding-top:70px; }
 			#sharing_city_seoul #sharing_content .viewed { display:block; }
 			
-			#sharing_city_seoul #sharing_content .bt_download_report { position:absolute; left:0; bottom:70px; }
-			#sharing_city_seoul #sharing_content .bt_summary_download_report { left:280px; }
+			/*#sharing_city_seoul #sharing_content .bt_download_report { position:absolute; left:800px; bottom:70px; }
+			#sharing_city_seoul #sharing_content .bt_summary_download_report { left:0px; }
+			#sharing_city_seoul #sharing_content .bt_summary_download_report.year_2014 { left: 460px;}*/
+
+			#sharing_city_seoul #sharing_content .report-downloads {
+				margin-top: 40px;
+			}
+			#sharing_city_seoul #sharing_content .bt_download_report { margin: 15px 0; }
 			
 				#sharing_city_seoul #sharing_content .bt_download_report a { display:inline-block; vertical-align:middle;  height:40px; text-align:center; line-height:40px; color:#fff; background:url(./images/bg_download_report.png) repeat;  }
 				#sharing_city_seoul #sharing_content .bt_download_report a:hover { background:url(./images/bg_download_report_selected.png) repeat; }
 				
-				#sharing_city_seoul #sharing_content .bt_download_report a.text { text-decoration:none; font-size:14px; width:220px; }
-				#sharing_city_seoul #sharing_content .bt_summary_download_report a.text { width:350px; }
+				#sharing_city_seoul #sharing_content .bt_download_report a.text { text-decoration:none; font-size:14px; width:280px; }
+				#sharing_city_seoul #sharing_content .bt_summary_download_report a.text { width: 410px; }
 				#sharing_city_seoul #sharing_content .bt_download_report a.text span { display:inline-block; padding-left:18px; background:url(./images/icon_sharing1.png) no-repeat left center; }
 				#sharing_city_seoul #sharing_content .bt_download_report a.text span.short { display:none; }
 				
@@ -275,13 +292,18 @@
 
         #page-header .content_width { margin-bottom:30px; padding-bottom:30px; border-bottom:1px solid #00C1C0; }
     
-	   #page-header h1 { margin:0; padding:0; padding-left:52px; font-size:36px; line-height:30px; color:#00C1C0; font-weight:bold; height:70px; }
-       #page-header h1.news { background:url(./images/bg_icon_news.png) no-repeat left top; }
-       #page-header h1.org { background:url(./images/bg_icon_org.png) no-repeat left top; }
+	   	#page-header h1 { margin:0; padding:0; padding-left:52px; font-size:36px; line-height:30px; color:#00C1C0; font-weight:bold; height:70px; }
+       	#page-header h1.news { background:url(./images/bg_icon_news.png) no-repeat left top; }
+       	#page-header h1.org { background:url(./images/bg_icon_org.png) no-repeat left top; }
 	
-	   #page-header ul { list-style:none; margin:0; padding:0; margin-left:50px; margin-right:50px; }
-	   #page-header ul li { float:left; width:150px; }
-	   #page-header ul li a { display:inline-block; line-height:30px; font-size:15px; color:#00C1C0; text-decoration:none; }
+	   	#page-header ul { list-style:none; margin:0; padding:0; margin-left:50px; margin-right:50px; }
+	   	#page-header ul li { float:left; width:150px; }
+	   	#page-header ul li a { display:inline-block; line-height:30px; font-size:15px; color:#00C1C0; text-decoration:none; }
+
+		#page-header .see_service_list { text-align:center; float: right; }
+            #page-header .see_service_list a { display:inline-block; width:150px; height:40px; line-height:40px; font-size:14px; text-align:center; border:1px solid #00C1C0; color:#00C1C0; text-decoration:none; }
+            #page-header .see_service_list a:hover { background:#00c1c0; color:#fff; }
+
 	
 	#organization_wrap { position:relative; }
 	   #organization_wrap .organization_wrap { position:relative; margin-top:30px; border-bottom:1px solid #00C1C0; padding-left:50px; padding-right:50px; }

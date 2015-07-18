@@ -2,6 +2,10 @@
     <div id="page-header" class="have_tabs">
         <div class="content_width">
             <h1 class="org">Service List</h1>
+
+            <div class="see_service_list">
+                <a href="/services-infographics">SEE INFOGRAPHICS</a>
+           </div>
             
             <ul class="tabs">
             <?php
