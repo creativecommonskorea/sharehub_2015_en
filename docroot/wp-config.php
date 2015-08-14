@@ -31,7 +31,7 @@ $dotenv = new Dotenv\Dotenv( TOP_ROOT );
 if (file_exists( TOP_ROOT . '/.env')) {
   $dotenv->load();
 }
-$dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'DB_HOST', 'DB_CHARSET', 'DB_COLLATE', 'AUTH_KEY', 'SECURE_AUTH_KEY', 'LOGGED_IN_KEY', 'NONCE_KEY', 'AUTH_SALT', 'SECURE_AUTH_SALT', 'LOGGED_IN_SALT', 'NONCE_SALT']);
+$dotenv->required(array('DB_NAME', 'DB_USER', 'DB_PASSWORD', 'DB_HOST', 'DB_CHARSET', 'DB_COLLATE', 'AUTH_KEY', 'SECURE_AUTH_KEY', 'LOGGED_IN_KEY', 'NONCE_KEY', 'AUTH_SALT', 'SECURE_AUTH_SALT', 'LOGGED_IN_SALT', 'NONCE_SALT'));
 
 /**
  * DB settings
@@ -40,8 +40,8 @@ define('DB_NAME', getenv('DB_NAME'));
 define('DB_USER', getenv('DB_USER'));
 define('DB_PASSWORD', getenv('DB_PASSWORD'));
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
-define('DB_CHARSET', 'utf8');
-define('DB_COLLATE', 'utf8_generakl_ci');
+define('DB_CHARSET', getenv('DB_CHARSET') ?: 'utf8');
+define('DB_COLLATE', getenv('DB_COLLATE') ?: 'utf8_general_ci');
 
 /**
  * Authentication Unique Keys and Salts
