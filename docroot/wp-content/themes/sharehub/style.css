@@ -122,6 +122,12 @@
 				width: 80%; line-height: 200%; font-size:24px;
 				margin-top: 20px; margin-bottom: 20px;
 			}
+			.btn-info2 {
+				margin-top: 65px;
+				font-size: 16px;
+				padding: .5em;
+				width: 30%;
+			}
 			.center-block {
 				display: block;
 				margin-left: auto;

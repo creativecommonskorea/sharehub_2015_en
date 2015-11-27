@@ -98,6 +98,7 @@
                             Especially, Share Hub is sponsored by Seoul City under “Seoul Metropolitan Government Act for Promoting Sharing.” This Act includes opening City Goverment data and contents, sharing municipally owned idle spaces, and supporting sharing economy services. You can reach Share Hub at <a href="mailto:creative@cckorea.org">creative@cckorea.org</a>.
                         </p>
 					</div>
+					<p>&nbsp;</p>
 					<p><a class="btn btn-annual center-block" target="_blank" href="//sharehub.kr/2014/en">2014 ShareHub Annual Report</a></p>
 		
 				</div>
@@ -180,6 +181,8 @@
 						<a href="/wp-content/uploads/reports/full_report_2014.pdf" class="icon"><span>DOWNLOAD FULL REPORT (2014)</span></a>
 					</div>	
 				</div>
+
+				<p><a class="btn btn-annual btn-info2 center-block" target="_blank" href="/infographics2">2015 Sharing City Seoul Infographic</a></p>
 
 			</div>
 		</div>
