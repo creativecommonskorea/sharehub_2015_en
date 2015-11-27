@@ -16,10 +16,10 @@
 
 // wp-content is outside of wordpress directory, which is a clean WP checkout
 
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
-define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress');
+define('WP_HOME',    'http://' . $_SERVER['HTTP_HOST']);
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
+define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content');
 define('TOP_ROOT', trim(dirname(__DIR__)));
 
 require_once( TOP_ROOT . '/vendor/autoload.php' );
